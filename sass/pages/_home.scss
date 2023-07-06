@@ -70,10 +70,11 @@ body {
     border: none;
     cursor: pointer;
     box-shadow: 1px 1px 4px #888888;
-}
-
-.search button:hover {
-    box-shadow: 1px 2px 8px black;
+    transform: scale(1);
+    transition-property: transform 400ms;
+    &:hover {
+        transform: scale(1.15);
+    }
 }
 
 .menu {
