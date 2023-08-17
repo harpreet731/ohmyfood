@@ -5,10 +5,12 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "sass --watch ./sass/main.scss:./styles/main.css --style expanded"
+    "sass": "sass --watch ./sass/main.scss:./styles/main.css --style expanded",
+    "prefix": "postcss ./styles/main.css --use autoprefixer -d ./styles/prefixed/"
   },
   "author": "",
   "license": "ISC",
+  "browserslist": "last 4 versions",
   "dependencies": {
     "sass": "^1.63.2"
   }
